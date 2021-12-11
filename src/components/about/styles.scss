@@ -1,0 +1,129 @@
+.about {
+  margin-top: 90px;
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 475px;
+  }
+  .background_gradient {
+    background: linear-gradient(89.98deg, #F1F2F4 0.02%, rgba(241, 242, 244, 0) 99.99%);
+    height: 475px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .container {
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    height: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    position: absolute;
+    padding: 40px 0;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    height: min-content;
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 102.4%;
+      color: #212227;
+      margin-bottom: 20px;
+      font-family: Montserrat-Bold;
+    }
+    .desc {
+      margin-bottom: 15px;
+      color: #212227;
+    }
+    .more {
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #212227;
+    }
+  }
+  .tags {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    .tag {
+      width: 300px;
+      background: #F1F2F4;
+      margin: 35px 0;
+      padding: 30px 25px;
+      z-index: 1;
+      .title-section {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .falconicLogo-img {
+          width: 20px;
+          height: 23px;
+          margin-right: 5px;
+        }
+      }
+      .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 102.4%;
+        color: #212227;
+        margin-bottom: 40px;
+      }
+      .descs {
+        .desc {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 120%;
+          padding: 5px 0 10px;
+          color: #212227;
+          border-bottom: 1px solid rgba(156, 158, 163, 0.2);
+        }
+      }
+      &.select {
+        margin: 0 30px;
+        padding: 60px 25px;
+        background: #E1E2E4;
+        .title, .desc {
+          color: #212227;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    .container {
+      left: 0;
+    }
+    .tags {
+      margin-top: 0;
+      flex-direction: column;
+      .tag {
+        width: 100%;
+        text-align: center;
+        &.select {
+          margin: 0;
+        }
+      }
+    }
+    .content {
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+}

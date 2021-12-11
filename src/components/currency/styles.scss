@@ -1,0 +1,114 @@
+.tabs {
+  margin-top: 90px;
+  width: 100%;
+  .nav-tabs {
+    border-bottom: 4px solid #dee2e6;
+    .nav-link {
+      border: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 102.4%;
+      color: #212227;
+      margin-bottom: -4px;
+      &.active {
+        font-weight: bold;
+        border-bottom: 4px solid black;
+        font-family: Montserrat-Bold;
+      }
+    }
+  }
+  .tab-content {
+    .calculator {
+      background: #F1F2F4;
+      padding: 25px 21px;
+      select, input {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #212227;
+        padding: 0;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #212227;
+        text-align: right;
+        font-family: Montserrat-SemiBold;
+      }
+      .title {
+        color: #212227;
+        font-family: Montserrat-SemiBold;
+      }
+      .sub-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #9C9EA3;
+      }
+    }
+    .currency {
+      padding: 5px 10px;
+      > .row {
+        margin: 0 10px;
+      }
+      .title {
+        font-family: Montserrat-SemiBold;
+      }
+      .border_right {
+        border-right: 1px solid #F1F2F4;
+      }
+      .border_bottom {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #F1F2F4;
+      }
+      &.notitle {
+        margin-top: 36px;
+      }
+      .sub-title {
+        font-style: normal;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 15px;
+        color: #212227;
+        font-family: Montserrat-Bold;
+      }
+      .desc {
+        font-family: Montserrat-SemiBold;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        color: #212227;
+        &.text-left {
+          text-align: left;
+        }
+        span {
+          color: #9C9EA3;
+        }
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #212227;
+      margin-bottom: 20px;
+      span {
+        color: #9C9EA3;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .tab-content {
+      .currency {
+        .border_right {
+          border-right: unset;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.card_section {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  font-family: Montserrat;
+  .row {
+    padding: 0 12px;
+    .col-md-6 {
+      padding: 0;
+    }
+    .card_img {
+      width: -webkit-fill-available;
+    }
+    .card_desc {
+      padding: 22px 63px 41px 50px;
+      background: #F1F2F4;
+      height: max-content;
+      .title {
+        font-style: normal;
+        font-family: Montserrat-Bold;
+        font-size: 64px;
+        line-height: 102.4%;
+        margin-bottom: 40px;
+      }
+      .feature {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .arrow-img {
+          margin-right: 20px;
+        }
+        p {
+          font-family: Montserrat;
+          font-size: 18px;
+          line-height: 102.4%;
+        }
+        b {
+          font-family: Montserrat-Bold;
+        }
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    
+  }
+}

@@ -1,0 +1,105 @@
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 370px;
+  background: #212227;
+  position: relative;
+  overflow: hidden;
+  padding: 45px 0 21px;
+  .footer_img {
+    width: 400px;
+    position: absolute;
+    top: 42px;
+    left: 68px;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F1F2F4;
+    margin-bottom: 25px;
+  }
+  .sub_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F1F2F4;
+    margin-bottom: 15px;
+    font-family: Montserrat-Bold;
+  }
+  .container {
+    z-index: 1;
+    h1 {
+      font-family: Montserrat-Bold;
+    }
+  }
+  .subscribe_section {
+    display: flex;
+    justify-content: space-between;
+    input {
+      margin-right: 15px;
+    }
+    button {
+      color: #212227;
+    }
+    .phone {
+      width: 18px;
+      height: 18px;
+      color: #9C9EA3;
+    }
+    .phones {
+      .phone_number {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        font-family: Montserrat-Bold;
+      }
+    }
+    .social {
+      svg {
+        width: 40px;
+        height: 40px;
+        color: #9C9EA3;
+        margin-right: 15px;
+      }
+    }
+  }
+  .lists {
+    display: flex;
+    flex-direction: column;
+    .list {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 210%;
+      color: #F1F2F4;
+    }
+  }
+  .company_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #9C9EA3;
+    margin-top: 40px;
+  }
+  @media (max-width: 991px) {
+    height: unset;
+    .container {
+      .row {
+        > div {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+  }
+}
